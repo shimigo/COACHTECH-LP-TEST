@@ -1,6 +1,7 @@
 
 body {
   max-width: 1000px;
+
 }
 
 /* --------------HEADER 部分----------------------- */
@@ -13,6 +14,8 @@ body {
 .company-logo__name {
   display:inline-block;
   width: 50px;
+  height: 20px;
+  margin-top: 10px;
 }
 .nav__list {
   display: flex;
@@ -35,38 +38,34 @@ a {
 
 /*----------------SECTION1 Ahead-------------------------*/
 .section1 {
-  background-image: url(/img/.png);
+  background-image: url(../img/mv.png);
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
-}
-
-.card1 {
+  height: 800px;
   width: 100%;
-  position: relative;
-  display: block;
-  margin-left: auto;
 }
 
 .section1__ideal {
-  position:absolute;
-  font-weight: bold;
   font-size: 50px;
   color: white;
-  top: 300px;
-  left: 8%;
-  font-family:"Indie Flower", cursive;
-  font-style: italic;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  padding-top: 300px;
 }
 
 .section1__slogan-sub {
-  position: absolute;
-  font-weight: bold;
-  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 0;
   color:white;
-  top: 370px;
-  left: 270px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  text-align: center;
 }
+
+
 
 /*----------------SECTION2 About-------------------------*/
 .section2 {
@@ -95,9 +94,30 @@ a {
   margin-bottom: 50px;
 }
 
+
+
+.section1__slogan-sub {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+  top: 370px;
+  left: 270px;
+}
+
+
+
+
+
+
+
+
+
+
 /*----------------SECTION3 Service-------------------------*/  
 .section3 {
   margin-top:80px;
+  margin: 0 10%;
 }
 .section3__title {
   margin-bottom: 30px;
@@ -107,17 +127,17 @@ a {
 }
 
 .wrapper-1 {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: 10%;
+  
 }
 
 .wrapper-2 {
-width: 80%;
+width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: 10%;
+  
 }
 
 img {
@@ -174,6 +194,7 @@ img {
   background-color:black;
   margin: 80px 0;
   height:370px;
+  width: 100%;
 }
 
 .wrapper__3 {
@@ -236,6 +257,7 @@ img {
 /*----------------SECTION5 Blog-------------------------*/ 
 .section5 {
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .blog-title-jp {
@@ -386,6 +408,13 @@ li:not(:first-child) {
   text-decoration: none;
   color: white;
 }
+.drawer {
+  display: none;
+}
+
+
+
+
 
 
 
@@ -448,9 +477,74 @@ li:not(:first-child) {
   border-left:none;
   padding-top:15px;
 }
+.nav__list {
+  display:none;
+}
 
-
-
+/*----------------Hamburger-------------------------*/  
+.navkey a{
+  text-decoration: none;
+  color: blue
+}
+.navkey {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #eee;
+  transition: .7s;
+  text-align: center;
+  z-index: 1;
+}
+.navkey ul{
+  padding-top: 80px;
+}
+.navkey ul li{
+  list-style-type: none;
+  margin-top: 50px;
+}
+.menu {
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in{
+  transform: translateX(100%);
+}
 
 }
 
