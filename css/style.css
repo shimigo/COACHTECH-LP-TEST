@@ -34,6 +34,12 @@ a {
 /* ---------------MAIN 部分------------------------------------------ */
 
 /*----------------SECTION1 Ahead-------------------------*/
+.section1 {
+  background-image: url(/img/.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 
 .card1 {
   width: 100%;
@@ -64,7 +70,7 @@ a {
 
 /*----------------SECTION2 About-------------------------*/
 .section2 {
-  background-color:black;
+ background-color:black; 
 }
 
 .section2__will {
@@ -257,14 +263,14 @@ img {
 }
 .blog-date {
   margin-top: 5px;
-  font-size: 5px;
+  font-size: 10px;
 }
 
 .blog-comment {
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  padding-top: 5px;
+  padding: 5px 0;
 }
 
 .blog-img:hover {
@@ -345,7 +351,6 @@ footer {
 .footer-line {
   display: flex;
   justify-content: space-between;
-  
   align-items: center;
   width: 90%;
   padding: 10px 0;
@@ -356,8 +361,10 @@ footer {
   font-size: 5px;
   color: white;
   margin-left: 20px;
- 
-}
+  padding-left: 20px;
+ }
+
+
 .footer-nav-list {
   width: 100%;
   display: flex;
@@ -383,13 +390,67 @@ li:not(:first-child) {
 
 
 /* レスポンシブ (1000px以上)*/
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 .wrapper-1 {
   width: 80%;
-  display: flex;
+  display: block;
   justify-content: start;
   margin-left: 10%;
 }
+
+.wrapper-2 {
+ width: 80%;
+  display: block;
+  justify-content: start;
+  margin-left: 10%; 
+  display: block;
+}
+.wrapper-4{
+  display: block;
+  justify-content: start;
+  width: 100%;
+  margin: 0 10% 0 10%;
 }
 
+.blog-img-card {
+  width: 80%;
+}
+/*----------------footer-------------------------*/  
+.footer-line {
+  display: block;
+  justify-content: space-between;
+  
+  align-items: center;
+  width: 90%;
+  padding: 10px 0;
+}
+
+.footer-nav-list {
+  width: 100%;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 8px;  
+}
+
+.footer-copyright {
+  display:block;
+  font-size: 5px;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+li {
+  text-align: center;
+}
+ 
+li:not(:first-child) {
+  border-left:none;
+  padding-top:15px;
+}
+
+
+
+
+}
 
