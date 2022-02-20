@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/contact.css">
-  <title>LP制作演習問題</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>株式会社TECH</title>
+  <mata name="description" content="株式会社TECHのコーポレートサイトです">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,19 +55,37 @@
     <article class="article">
       <section class="section1">
         <div class="section1__slogan">
-          <h1 class="section1__ideal">最新のテクノロジーで社会課題を解決</h1>
-          <p class="section1__slogan-sub">Solving social issues with the latest technology</p>
+          <h1 class="section1__ideal">お問い合わせ</h1>
         </div>
       </section>
-
-      <section class="section8">
-        <h3 class="inquiry-title-jp">お問い合わせ</h3>
-        <p class="inquiry-massage">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
-        <div class="btn">
-          <a href="contact.html" class="btn-sight">お問い合わせ</a>
-        </div>
-      </section>
-
+      <div class="contact ptb-m wrap-s">
+        <form class="contact-form" action="index.html" method="post" wtx-context="3EFB6AE0-8947-464D-84B5-DB4169637EC4">
+          <div class="contact-form-item">
+            <label class="contact-form-item-name" for="company">会社名</label>
+            <input type="text" id="company" class="contact-form-item-input"
+              wtx-context="F2752BF4-B209-4C9F-8CC7-06379AC544F6">
+          </div>
+          <div class="contact-form-item">
+            <label class="contact-form-item-name" for="name">お名前<span
+                class="contact-form-item-required">*</span></label>
+            <input type="text" id="name" class="contact-form-item-input" required=""
+              wtx-context="98697D5C-DB48-4488-8E19-F272199C9F32">
+          </div>
+          <div class="contact-form-item">
+            <label class="contact-form-item-name" for="email">メールアドレス<span
+                class="contact-form-item-required">*</span></label>
+            <input type="email" id="email" class="contact-form-item-input" required=""
+              wtx-context="59616EED-1725-4FE1-9B3B-A7CAFE965138">
+          </div>
+          <div class="contact-form-item">
+            <label class="contact-form-item-name" for="comment">お問い合わせ内容<span
+                class="contact-form-item-required">*</span></label>
+            <textarea id="comment" rows="8" cols="80" class="contact-form-item-textarea" required=""></textarea>
+          </div>
+          <input type="submit" value="お申し込み" class="contact-form-submit"
+            wtx-context="BBF7FCB0-938D-4F6B-86D2-30D5337E0529">
+        </form>
+      </div>
   </main>
 
   <footer>
@@ -87,15 +106,11 @@
       </nav>
   </footer>
 
-
-
   <script>
     dayjs.locale('ja'); // 日本語に変換
               //ここから追記...
   </script>
   <script src="js/main.js"></script>
-
-
 
 </body>
 

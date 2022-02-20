@@ -1,4 +1,4 @@
-
+/* --------------共有 部分----------------------- */
 body {
   max-width: 1000px;
 }
@@ -25,8 +25,6 @@ body {
  transition: 0.4s;
 }
 
-
-
 /* --------------HEADER 部分----------------------- */
 .section0 {
   display: flex;
@@ -40,7 +38,7 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
-  }
+}
 
 .company-logo__name {
     width: 70px; 
@@ -50,13 +48,11 @@ body {
 .nav__list {
   display: flex;
   font-weight: bold;
-  
 }
 
 .nav__list-item:not(:last-child) {
-   margin-right: 10px;
-   font-size: 15px;
-   
+  margin-right: 10px;
+  font-size: 15px;  
 }
 
 a {
@@ -67,14 +63,13 @@ a {
 /* ---------------MAIN 部分------------------------------------------ */
 
 /*----------------SECTION1 Ahead-------------------------*/
-.section1 {
-  height: 80vh;
+  .section1{
+  height: 250PX;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/mv.png);
-  color: #fff;
-  width: 100%;
+  background: url(../img/mv.png) center/cover;  
+  color:white; 
 }
 
 .section1__slogan {
@@ -83,37 +78,69 @@ a {
 }
 
 .section1__ideal {
-font-weight: bold;
-font-size: 50px;
-text-align: center;
+ font-weight: bold;
+ font-size: 30px;
+ text-align: center;
 }
 
-.section1__slogan-sub {
-  font-size: 18px;
+/*----------------Contact-------------------------*/
+.wrap-s {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px 0;
+}
+
+.contact-form-item:not(:first-child){
+  margin-top: 20px;
+}
+
+.contact-form-item-name{
   font-weight: bold;
-  text-align: center;
- 
 }
 
-
-
-/*----------------SECTION8 Inquiry-------------------------*/  
-
-.section8 {
-  background-color:rgb(252, 244, 244);
-  margin-top: 80px;
-  height: 200px;
+.contact-form-item-input{
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.inquiry-title-jp {
-  padding-top: 50px;
-  text-align: center;
+.contact-form-item-textarea{
+  font-size: 16px;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  resize: none;
 }
 
-.inquiry-massage {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 10px;
+.contact-form-item-required{
+  color: #cd0224;
+  margin-left: 5px;
+}
+
+.contact-form-submit{
+  width: 300px;
+  margin: 20px auto 0;
+	padding: 10px;
+	border: none;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
 }
 
 /*----------------footer-------------------------*/  
@@ -136,8 +163,7 @@ footer {
   color: white;
   margin-left: 20px;
   padding-left: 20px;
- }
-
+}
 
 .footer-nav-list {
   width: 100%;
@@ -149,7 +175,7 @@ footer {
 
 li {
   margin-left: 10px;
-   padding-left: 8px;
+  padding-left: 8px;
 }
 
 li:not(:first-child) {
@@ -160,15 +186,10 @@ li:not(:first-child) {
   text-decoration: none;
   color: white;
 }
+
 .drawer {
   display: none;
 }
-
-
-
-
-
-
 
 /* レスポンシブ (1000px以上)*/
 @media screen and (max-width: 768px) {
@@ -248,6 +269,7 @@ li:not(:first-child) {
   transition: .7s;
   text-align: center;
   z-index: 2;
+  top: 10px;
 }
 .navkey ul{
   padding-top: 80px;

@@ -1,3 +1,4 @@
+/* --------------共有 部分----------------------- */
 
 body {
   max-width: 1000px;
@@ -25,8 +26,6 @@ body {
  transition: 0.4s;
 }
 
-
-
 /* --------------HEADER 部分----------------------- */
 .section0 {
   display: flex;
@@ -40,23 +39,21 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
-  }
+}
 
 .company-logo__name {
-    width: 70px; 
-    padding-right: 180px;   
+  width: 70px; 
+  padding-right: 180px;   
 }
 
 .nav__list {
   display: flex;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
 
 .nav__list-item:not(:last-child) {
-   margin-right: 10px;
-   font-size: 15px;
-   
+  margin-right: 10px;
+  font-size: 15px;  
 }
 
 a {
@@ -67,14 +64,13 @@ a {
 /* ---------------MAIN 部分------------------------------------------ */
 
 /*----------------SECTION1 Ahead-------------------------*/
-.section1 {
-  height: 80vh;
+ .section1{
+  height: 250PX;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/mv.png);
-  color: #fff;
-  width: 100%;
+  background: url(../img/mv.png) center/cover;
+  color:white; 
 }
 
 .section1__slogan {
@@ -83,61 +79,57 @@ a {
 }
 
 .section1__ideal {
-font-weight: bold;
-font-size: 50px;
-text-align: center;
-}
-
-.section1__slogan-sub {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
+ font-weight: bold;
+ font-size: 30px;
+ text-align: center;
 }
 
 /*----------------SECTION Recruit-------------------------*/  
 .ptb-m {
-     padding: 80px 0; 
+  padding: 80px 0; 
 }
 
 .wrap-s {
-     width: 75%;
-    margin: 0 auto; 
+  width: 75%;
+  margin: 0 auto; 
 }
 
-
-.recruit-type-ttl {
-    font-weight: bold;
-    font-size: 26px;
-    border-bottom: 1px solid #222;
-}
- 
-.recruit-type-description {
-     margin-top: 20px; 
+.recruit-type:not(:first-child){
+	margin-top: 80px;
 }
 
-.recruit-type-info {
-    width: 100%;
-    border: 1px solid #222;
-    margin-top: 20px;
+.recruit-type-ttl{
+	font-weight: bold;
+	font-size: 26px;
+	border-bottom: 1px solid #222;
 }
 
-.recruit-type-info-name {
-    font-weight: bold;
-    width: 30%;
-    border-right: 1px solid #222;
-    background-color: #f5f6f9;
+.recruit-type-description{
+	margin-top: 20px;
 }
 
-.recruit-type-info-data {
-      width: 70%;
+.recruit-type-info{
+  width: 100%;
+	border: 1px solid #222;
+	margin-top: 20px;
 }
 
-.recruit-type-info-name, .recruit-type-info-data {
-     border-top: 1px solid #222;
-    padding: 10px; 
+.recruit-type-info-name,
+.recruit-type-info-data{
+	border-top: 1px solid #222;
+	padding: 10px;
 }
 
+.recruit-type-info-name{
+	font-weight: bold;
+	width: 30%;
+	border-right: 1px solid #222;
+	background-color: #f5f6f9;
+}
 
+.recruit-type-info-data{
+	width: 70%;
+}
 
 /*----------------SECTION8 Inquiry-------------------------*/  
 
@@ -178,7 +170,7 @@ footer {
   color: white;
   margin-left: 20px;
   padding-left: 20px;
- }
+}
 
 
 .footer-nav-list {
@@ -191,7 +183,7 @@ footer {
 
 li {
   margin-left: 10px;
-   padding-left: 8px;
+  padding-left: 8px;
 }
 
 li:not(:first-child) {
@@ -202,15 +194,10 @@ li:not(:first-child) {
   text-decoration: none;
   color: white;
 }
+
 .drawer {
   display: none;
 }
-
-
-
-
-
-
 
 /* レスポンシブ (1000px以上)*/
 @media screen and (max-width: 768px) {
@@ -290,6 +277,7 @@ li:not(:first-child) {
   transition: .7s;
   text-align: center;
   z-index: 2;
+  top: 10px;
 }
 .navkey ul{
   padding-top: 80px;
