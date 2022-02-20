@@ -69,14 +69,15 @@ a {
 /* ---------------MAIN 部分------------------------------------------ */
 
 /*----------------SECTION1 Ahead-------------------------*/
-.section1 {
-  height: 80vh;
+ .section1{
+  height: 250PX;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../img/mv.png);
-  color: #fff;
-  width: 100%;
+  background: center;
+  background:cover;
+  color: black; 
 }
 
 .section1__slogan {
@@ -86,54 +87,40 @@ a {
 
 .section1__ideal {
 font-weight: bold;
-font-size: 50px;
+font-size: 30px;
 text-align: center;
 }
 
-.section1__slogan-sub {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
- 
-}
-
 /*----------------SECTION2 company-------------------------*/  
-
-.news-list {
-  width: 80%;
-  display: inline-block;
-  text-align: center;
-  padding: 50px 0;
-  margin-left:  10%;
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
+.ptb-m {
+  padding: 80px 0;
+}
+.wrap-s {
+  width: 75%;
+  margin: 0 auto;
 }
 
-.news-list-item {
-  padding: 15px 0;
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.company-info {
   width: 100%;
-  display: inline-block;
-  border-bottom: 1px solid gray;
-  text-align: left;
+  border-bottom: 1px solid #222;
 }
 
-.news-list-item:hover {
-  border-bottom: 1px solid deeppink; 
+.company-info-name {
+   border-top: 1px solid #222;
+  padding:20px 0;
+  font-weight: bold;
+  width: 30%;
 }
 
-.news-list-label {
-  border-radius: 10px;
-  margin: 5px 50px;
-  padding: 3px 0;
-  width: 80px;
-  display: inline-block;
-  text-align: center;
-  background:deeppink;
-  color: #fff;
-  font-size: 14px;
+.company-info-data {
+  border-top: 1px solid #222;
+  padding:20px 0;
 }
-
-
 
 /*----------------SECTION8 Inquiry-------------------------*/  
 
