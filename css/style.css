@@ -1,7 +1,7 @@
 
 /* --------------共有 部分----------------------- */
-body {
-  max-width: 1000px;
+.btn {
+  margin-top:30px
 }
 
 .btn-sight {
@@ -165,10 +165,6 @@ img {
   font-size: 14px;
   padding-bottom: 40px;
   line-height: 20px;
-}
-
-.btn {
-  margin-top:30px
 }
 
 /*----------------SECTION4 News-------------------------*/
