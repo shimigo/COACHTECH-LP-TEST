@@ -1,32 +1,40 @@
 
 body {
   max-width: 1000px;
-
 }
+
+
 
 /* --------------HEADER 部分----------------------- */
 .section0 {
   display: flex;
   justify-content: space-between;
-  margin: 10px 30px;
   align-items: center;
-}
+  background-color: #fff;
+  position:fixed;
+  width: 100%;
+  padding: 0 30px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  }
+
 .company-logo__name {
-  display:inline-block;
-  width: 50px;
-  height: 20px;
-  margin-top: 10px;
-}
-.nav__list {
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
+    width: 70px; 
+    padding-right: 180px;   
 }
 
-li {
-  margin-left: 30px;
+.nav__list {
+  display: flex;
+  font-weight: bold;
+  
+}
+
+.nav__list-item:not(:last-child) {
+   margin-right: 10px;
+   font-size: 15px;
+   
 }
 
 a {
@@ -38,31 +46,31 @@ a {
 
 /*----------------SECTION1 Ahead-------------------------*/
 .section1 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/mv.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
+  color: #fff;
   width: 100%;
+}
+
+.section1__slogan {
+ width: 100%;
+ margin: 0 auto; 
 }
 
 .section1__ideal {
-  font-size: 50px;
-  color: white;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  text-align: center;
-  padding-top: 300px;
+font-weight: bold;
+font-size: 50px;
+text-align: center;
 }
 
 .section1__slogan-sub {
-  display: inline-block;
-  width: 100%;
-  font-size: 16px;
-  padding: 5px 0;
-  color:white;
-  line-height: 30px;
-  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
+ 
 }
 
 
@@ -71,11 +79,11 @@ a {
 .section2 {
  background-color:black; 
 }
-
 .section2__will {
-  margin-left: 80px;
+  margin: 0 10%
  
 }
+
 
 .section2__will-title {
   font-size: 28px;
@@ -92,27 +100,8 @@ a {
   color:white;
   line-height: 30px;
   margin-bottom: 50px;
+  
 }
-
-
-
-.section1__slogan-sub {
-  position: absolute;
-  font-weight: bold;
-  font-size: 18px;
-  color:white;
-  top: 370px;
-  left: 270px;
-}
-
-
-
-
-
-
-
-
-
 
 /*----------------SECTION3 Service-------------------------*/  
 .section3 {
@@ -120,7 +109,7 @@ a {
   margin: 0 10%;
 }
 .section3__title {
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-size: 20px;
   color:black;
   text-align: center;
@@ -185,9 +174,6 @@ img {
  opacity: 0.6;
  transition: 0.4s;
 }
-
-
-
 
 /*----------------SECTION4 News-------------------------*/
 .section4 {
@@ -420,7 +406,8 @@ li:not(:first-child) {
 
 /* レスポンシブ (1000px以上)*/
 @media screen and (max-width: 768px) {
-.wrapper-1 {
+  
+  .wrapper-1 {
   width: 80%;
   display: block;
   justify-content: start;
@@ -432,7 +419,7 @@ li:not(:first-child) {
   display: block;
   justify-content: start;
   margin-left: 10%; 
-  display: block;
+  
 }
 .wrapper-4{
   display: block;
@@ -491,10 +478,10 @@ li:not(:first-child) {
   height: 100vh;
   width: 100%;
   left: -100%;
-  background: #eee;
+  background:white;
   transition: .7s;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 .navkey ul{
   padding-top: 80px;
@@ -509,8 +496,8 @@ li:not(:first-child) {
   height: 32px;
   cursor: pointer;
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 10px;
+  top: 0;
 }
 .menu__line--top,
 .menu__line--middle,
@@ -521,6 +508,7 @@ li:not(:first-child) {
   background-color: #000;
   position: absolute;
   transition: 0.5s;
+  z-index: 10;
 }
 .menu__line--top {
   top: 0;
@@ -545,6 +533,8 @@ li:not(:first-child) {
 .in{
   transform: translateX(100%);
 }
-
+.drawer {
+  display: inline;
+}
 }
 
